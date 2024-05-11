@@ -1,0 +1,564 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://vst/science/ontologies/networkedu"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://vst/science/ontologies/networkedu"
+     versionIRI="http://vst/science/ontologies/networkedu/1.0.1">
+    <Prefix name="" IRI="http://vst/science/ontologies/networkedu/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Ability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassromWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContactWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseProjectPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseworkPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreditPreparationControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CurrentControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Descriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EduWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EssayPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EvaluationTools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExamPreparationControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtracurricularWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GraphPaperPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndependentStudy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntermediateCertification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laboratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaperPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seminar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#buildCompetence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIndicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrevDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOneSectionWith"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ClassromWork"/>
+        <ObjectUnionOf>
+            <Class IRI="#Laboratory"/>
+            <Class IRI="#Lecture"/>
+            <Class IRI="#Seminar"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Descriptor"/>
+        <ObjectUnionOf>
+            <Class IRI="#Ability"/>
+            <Class IRI="#Knowledge"/>
+            <Class IRI="#Skill"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EduWork"/>
+        <ObjectUnionOf>
+            <Class IRI="#ContactWork"/>
+            <Class IRI="#IndividualWork"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EvaluationTools"/>
+        <ObjectUnionOf>
+            <Class IRI="#CurrentControl"/>
+            <Class IRI="#IntermediateCertification"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ExtracurricularWork"/>
+        <ObjectUnionOf>
+            <Class IRI="#CourseProject"/>
+            <Class IRI="#CourseWork"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Ability"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassromWork"/>
+        <Class IRI="#ContactWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContactWork"/>
+        <Class IRI="#EduWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlWork"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseProject"/>
+        <Class IRI="#ExtracurricularWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseProjectPreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseWork"/>
+        <Class IRI="#ExtracurricularWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseworkPreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditPreparationControl"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CurrentControl"/>
+        <Class IRI="#EvaluationTools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Descriptor"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EduWork"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EssayPreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EvaluationTools"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExamPreparationControl"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtracurricularWork"/>
+        <Class IRI="#ContactWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GraphPaperPreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentStudy"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualWork"/>
+        <Class IRI="#EduWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntermediateCertification"/>
+        <Class IRI="#EvaluationTools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#ClassromWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lecture"/>
+        <Class IRI="#ClassromWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaperPreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seminar"/>
+        <Class IRI="#ClassromWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skill"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Ability"/>
+        <Class IRI="#Knowledge"/>
+        <Class IRI="#Skill"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClassromWork"/>
+        <Class IRI="#ExtracurricularWork"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ContactWork"/>
+        <Class IRI="#IndividualWork"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlWork"/>
+        <Class IRI="#CourseProjectPreparation"/>
+        <Class IRI="#CourseworkPreparation"/>
+        <Class IRI="#CreditPreparationControl"/>
+        <Class IRI="#EssayPreparation"/>
+        <Class IRI="#ExamPreparationControl"/>
+        <Class IRI="#GraphPaperPreparation"/>
+        <Class IRI="#IndependentStudy"/>
+        <Class IRI="#PaperPreparation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CourseProject"/>
+        <Class IRI="#CourseWork"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#Lecture"/>
+        <Class IRI="#Seminar"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#buildCompetence"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consistOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIndicator"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasNextDiscipline"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrevDiscipline"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOneSectionWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#buildCompetence"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consistOf"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <Class IRI="#Indicator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIndicator"/>
+        <Class IRI="#Competence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNextDiscipline"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrevDiscipline"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#buildCompetence"/>
+        <Class IRI="#Competence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consistOf"/>
+        <Class IRI="#EduWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <Class IRI="#Descriptor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIndicator"/>
+        <Class IRI="#Indicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNextDiscipline"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrevDiscipline"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ability</IRI>
+        <Literal>Умение</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ClassromWork</IRI>
+        <Literal>Аудиторная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Competence</IRI>
+        <Literal>Компетенция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ContactWork</IRI>
+        <Literal>Контактная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ControlWork</IRI>
+        <Literal>Контрольная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CourseProject</IRI>
+        <Literal>Курсовой_проект</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CourseProjectPreparation</IRI>
+        <Literal>Курсовой_проект_(подготовка)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CourseWork</IRI>
+        <Literal>Курсовая_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CourseworkPreparation</IRI>
+        <Literal>Курсовая_работа_(подготовка)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CreditPreparationControl</IRI>
+        <Literal>Подготовка_к_зачету_(контроль)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CurrentControl</IRI>
+        <Literal>Текущий_контроль</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Descriptor</IRI>
+        <Literal>Теорема покрытия: дескриптор может быть Знанием или Умением или Навыком</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Descriptor</IRI>
+        <Literal>Дескриптор</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Discipline</IRI>
+        <Literal>Дисциплина</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EduWork</IRI>
+        <Literal>Учебная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EssayPreparation</IRI>
+        <Literal>Эссе_(подготовка)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EvaluationTools</IRI>
+        <Literal>Оценочные_средства</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExamPreparationControl</IRI>
+        <Literal>Подготовка_к_экзамену_(контроль)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExtracurricularWork</IRI>
+        <Literal>Внеаудиторная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GraphPaperPreparation</IRI>
+        <Literal>Расчетно-графическая_работа_(подготовка)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndependentStudy</IRI>
+        <Literal>Самостоятельное_изучение</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Indicator</IRI>
+        <Literal>Индикатор</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndividualWork</IRI>
+        <Literal>Самостоятельная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IntermediateCertification</IRI>
+        <Literal>Промежуточная_аттестация</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Knowledge</IRI>
+        <Literal>Знание</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Laboratory</IRI>
+        <Literal>Лабораторная</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lecture</IRI>
+        <Literal>Лекция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PaperPreparation</IRI>
+        <Literal>Реферат_(подготовка)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Seminar</IRI>
+        <Literal>Семинар</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Skill</IRI>
+        <Literal>Навык</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#buildCompetence</IRI>
+        <Literal>формирует_компетенцию</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#consistOf</IRI>
+        <Literal>состоит_из</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDescriptor</IRI>
+        <Literal>имеет_дескриптор</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasIndicator</IRI>
+        <Literal>имеет_индикатор</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNextDiscipline</IRI>
+        <Literal>имеет_следующие_дисциплины</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPrevDiscipline</IRI>
+        <Literal>имеет_предыдущие_дисциплины</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOneSectionWith</IRI>
+        <Literal>относятся_к_одному_разделу</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

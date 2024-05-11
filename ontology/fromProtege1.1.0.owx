@@ -1,0 +1,838 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://vst/science/ontologies/networkedu"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://vst/science/ontologies/networkedu"
+     versionIRI="http://vst/science/ontologies/networkedu/1.1.0">
+    <Prefix name="" IRI="http://vst/science/ontologies/networkedu/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Ability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassromWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Competence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContactWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseProjectPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseworkPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreditPreparationControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Descriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discipline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EduWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EssayPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExamPreparationControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtracurricularWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GraphPaperPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndependentStudy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laboratory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PaperPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seminar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lecturePreparation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#buildCompetence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDescriptor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIndicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrevDiscipline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Development_of_a_knowledge_base_on_the_state_of_TP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IPC-2.1_develop_original_algorithms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IPC_2.2_developep_software_tools"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lec1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PC2_develop_algorithms_and_software_tools"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SignalProcessingAlgorithmsInControlSystems"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#development_and_implementation_of_algorithms_for_digital_signal_processing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#methods_of_representation_of_multidimensional_signals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modern_methods_of_digital_signal_processing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#practical_skills_in_digital_signal_processing_in_control_systems"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#practical_skills_of_developing_an_algorithmic_and_software"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#selfWork_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#systems_of_parallel_data_processing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1.1.ACS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1.2.Signal_exchange_between_subsystems"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ClassromWork"/>
+        <ObjectUnionOf>
+            <Class IRI="#Laboratory"/>
+            <Class IRI="#Lecture"/>
+            <Class IRI="#Seminar"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Descriptor"/>
+        <ObjectUnionOf>
+            <Class IRI="#Ability"/>
+            <Class IRI="#Knowledge"/>
+            <Class IRI="#Skill"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EduWork"/>
+        <ObjectUnionOf>
+            <Class IRI="#ContactWork"/>
+            <Class IRI="#IndividualWork"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ExtracurricularWork"/>
+        <ObjectUnionOf>
+            <Class IRI="#CourseProject"/>
+            <Class IRI="#CourseWork"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Ability"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassromWork"/>
+        <Class IRI="#ContactWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContactWork"/>
+        <Class IRI="#EduWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlWork"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseProject"/>
+        <Class IRI="#ExtracurricularWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseProjectPreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseWork"/>
+        <Class IRI="#ExtracurricularWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseworkPreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditPreparationControl"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Descriptor"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EduWork"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EssayPreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExamPreparationControl"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtracurricularWork"/>
+        <Class IRI="#ContactWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GraphPaperPreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentStudy"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualWork"/>
+        <Class IRI="#EduWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#ClassromWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lecture"/>
+        <Class IRI="#ClassromWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PaperPreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seminar"/>
+        <Class IRI="#ClassromWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skill"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lecturePreparation"/>
+        <Class IRI="#IndividualWork"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Ability"/>
+        <Class IRI="#Knowledge"/>
+        <Class IRI="#Skill"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClassromWork"/>
+        <Class IRI="#ExtracurricularWork"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ContactWork"/>
+        <Class IRI="#IndividualWork"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlWork"/>
+        <Class IRI="#CourseProjectPreparation"/>
+        <Class IRI="#CourseworkPreparation"/>
+        <Class IRI="#CreditPreparationControl"/>
+        <Class IRI="#EssayPreparation"/>
+        <Class IRI="#ExamPreparationControl"/>
+        <Class IRI="#GraphPaperPreparation"/>
+        <Class IRI="#IndependentStudy"/>
+        <Class IRI="#PaperPreparation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlWork"/>
+        <Class IRI="#CourseProjectPreparation"/>
+        <Class IRI="#CourseworkPreparation"/>
+        <Class IRI="#CreditPreparationControl"/>
+        <Class IRI="#EssayPreparation"/>
+        <Class IRI="#ExamPreparationControl"/>
+        <Class IRI="#GraphPaperPreparation"/>
+        <Class IRI="#IndependentStudy"/>
+        <Class IRI="#PaperPreparation"/>
+        <Class IRI="#lecturePreparation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CourseProject"/>
+        <Class IRI="#CourseWork"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Laboratory"/>
+        <Class IRI="#Lecture"/>
+        <Class IRI="#Seminar"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#Development_of_a_knowledge_base_on_the_state_of_TP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indicator"/>
+        <NamedIndividual IRI="#IPC-2.1_develop_original_algorithms"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indicator"/>
+        <NamedIndividual IRI="#IPC_2.2_developep_software_tools"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lecture"/>
+        <NamedIndividual IRI="#Lec1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Competence"/>
+        <NamedIndividual IRI="#PC2_develop_algorithms_and_software_tools"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Discipline"/>
+        <NamedIndividual IRI="#SignalProcessingAlgorithmsInControlSystems"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ability"/>
+        <NamedIndividual IRI="#development_and_implementation_of_algorithms_for_digital_signal_processing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Knowledge"/>
+        <NamedIndividual IRI="#methods_of_representation_of_multidimensional_signals"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Knowledge"/>
+        <NamedIndividual IRI="#modern_methods_of_digital_signal_processing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skill"/>
+        <NamedIndividual IRI="#practical_skills_in_digital_signal_processing_in_control_systems"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skill"/>
+        <NamedIndividual IRI="#practical_skills_of_developing_an_algorithmic_and_software"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lecturePreparation"/>
+        <NamedIndividual IRI="#selfWork_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Knowledge"/>
+        <NamedIndividual IRI="#systems_of_parallel_data_processing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#1.1.ACS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#1.2.Signal_exchange_between_subsystems"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <NamedIndividual IRI="#IPC-2.1_develop_original_algorithms"/>
+        <NamedIndividual IRI="#methods_of_representation_of_multidimensional_signals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <NamedIndividual IRI="#IPC-2.1_develop_original_algorithms"/>
+        <NamedIndividual IRI="#modern_methods_of_digital_signal_processing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <NamedIndividual IRI="#IPC-2.1_develop_original_algorithms"/>
+        <NamedIndividual IRI="#practical_skills_of_developing_an_algorithmic_and_software"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <NamedIndividual IRI="#IPC_2.2_developep_software_tools"/>
+        <NamedIndividual IRI="#development_and_implementation_of_algorithms_for_digital_signal_processing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <NamedIndividual IRI="#IPC_2.2_developep_software_tools"/>
+        <NamedIndividual IRI="#practical_skills_in_digital_signal_processing_in_control_systems"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <NamedIndividual IRI="#IPC_2.2_developep_software_tools"/>
+        <NamedIndividual IRI="#systems_of_parallel_data_processing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIndicator"/>
+        <NamedIndividual IRI="#PC2_develop_algorithms_and_software_tools"/>
+        <NamedIndividual IRI="#IPC-2.1_develop_original_algorithms"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIndicator"/>
+        <NamedIndividual IRI="#PC2_develop_algorithms_and_software_tools"/>
+        <NamedIndividual IRI="#IPC_2.2_developep_software_tools"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#buildCompetence"/>
+        <NamedIndividual IRI="#SignalProcessingAlgorithmsInControlSystems"/>
+        <NamedIndividual IRI="#PC2_develop_algorithms_and_software_tools"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnit"/>
+        <NamedIndividual IRI="#SignalProcessingAlgorithmsInControlSystems"/>
+        <NamedIndividual IRI="#Development_of_a_knowledge_base_on_the_state_of_TP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnit"/>
+        <NamedIndividual IRI="#SignalProcessingAlgorithmsInControlSystems"/>
+        <NamedIndividual IRI="#1.1.ACS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasUnit"/>
+        <NamedIndividual IRI="#SignalProcessingAlgorithmsInControlSystems"/>
+        <NamedIndividual IRI="#1.2.Signal_exchange_between_subsystems"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOf"/>
+        <NamedIndividual IRI="#1.1.ACS"/>
+        <NamedIndividual IRI="#Lec1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOf"/>
+        <NamedIndividual IRI="#1.1.ACS"/>
+        <NamedIndividual IRI="#selfWork_1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDuration"/>
+        <NamedIndividual IRI="#Lec1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDuration"/>
+        <NamedIndividual IRI="#selfWork_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#buildCompetence"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIndicator"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasNextDiscipline"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrevDiscipline"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#buildCompetence"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consistsOf"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <Class IRI="#Indicator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIndicator"/>
+        <Class IRI="#Competence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNextDiscipline"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrevDiscipline"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUnit"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#buildCompetence"/>
+        <Class IRI="#Competence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consistsOf"/>
+        <Class IRI="#EduWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDescriptor"/>
+        <Class IRI="#Descriptor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIndicator"/>
+        <Class IRI="#Indicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNextDiscipline"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrevDiscipline"/>
+        <Class IRI="#Discipline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUnit"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDuration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDuration"/>
+        <Class IRI="#EduWork"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDuration"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ability</IRI>
+        <Literal>Умение</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ClassromWork</IRI>
+        <Literal>Аудиторная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Competence</IRI>
+        <Literal>Компетенция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ContactWork</IRI>
+        <Literal>Контактная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ControlWork</IRI>
+        <Literal>Контрольная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CourseProject</IRI>
+        <Literal>Курсовой_проект</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CourseProjectPreparation</IRI>
+        <Literal>Курсовой_проект_(подготовка)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CourseWork</IRI>
+        <Literal>Курсовая_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CourseworkPreparation</IRI>
+        <Literal>Курсовая_работа_(подготовка)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CreditPreparationControl</IRI>
+        <Literal>Подготовка_к_зачету_(контроль)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Descriptor</IRI>
+        <Literal>Теорема покрытия: дескриптор может быть Знанием или Умением или Навыком</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Descriptor</IRI>
+        <Literal>Дескриптор</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Development_of_a_knowledge_base_on_the_state_of_TP</IRI>
+        <Literal>Тема лабораторной работы: Разработка базы знаний о состоянии объектов контроля ТП и связанных с ними сигналах.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Discipline</IRI>
+        <Literal>Дисциплина</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EduWork</IRI>
+        <Literal>Учебная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EssayPreparation</IRI>
+        <Literal>Эссе_(подготовка)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExamPreparationControl</IRI>
+        <Literal>Подготовка_к_экзамену_(контроль)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExtracurricularWork</IRI>
+        <Literal>Внеаудиторная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GraphPaperPreparation</IRI>
+        <Literal>Расчетно-графическая_работа_(подготовка)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IPC-2.1_develop_original_algorithms</IRI>
+        <Literal>ИОПК-2.1. Разрабатывает оригинальные алгоритмы для решения профессиональных задач</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IPC_2.2_developep_software_tools</IRI>
+        <Literal>ИОПК-2.2. Разрабатывает программные средства, в том числе с использованием современных интеллектуальных технологий, для решения профессиональных задач</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndependentStudy</IRI>
+        <Literal>Самостоятельное_изучение</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Indicator</IRI>
+        <Literal>Индикатор</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndividualWork</IRI>
+        <Literal>Самостоятельная_работа</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Knowledge</IRI>
+        <Literal>Знание</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Laboratory</IRI>
+        <Literal>Лабораторная</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lec1</IRI>
+        <Literal>Лекция_1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lecture</IRI>
+        <Literal>Лекция</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PC2_develop_algorithms_and_software_tools</IRI>
+        <Literal>ОПК-2. Способен разрабатывать оригинальные алгоритмы и программные средства, в том числе с использованием современных интеллектуальных технологий, для решения профессиональных задач.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PaperPreparation</IRI>
+        <Literal>Реферат_(подготовка)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Seminar</IRI>
+        <Literal>Семинар</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SignalProcessingAlgorithmsInControlSystems</IRI>
+        <Literal>АОС_в_СУ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Skill</IRI>
+        <Literal>Навык</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unit</IRI>
+        <Literal>Тема/раздел/блок из которого состоят дисциплины</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit</IRI>
+        <Literal>Тема</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#buildCompetence</IRI>
+        <Literal>формирует_компетенцию</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#consistsOf</IRI>
+        <Literal>состоит_из</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#development_and_implementation_of_algorithms_for_digital_signal_processing</IRI>
+        <Literal>Применять полученные знания при решении практических задач, связанных с разработкой и реализацией алгоритмов цифровой обработки сигналов в системах управления</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDescriptor</IRI>
+        <Literal>имеет_дескриптор</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDuration</IRI>
+        <Literal>имеет_продолжительность</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasIndicator</IRI>
+        <Literal>имеет_индикатор</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNextDiscipline</IRI>
+        <Literal>имеет_следующие_дисциплины</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPrevDiscipline</IRI>
+        <Literal>имеет_предыдущие_дисциплины</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasUnit</IRI>
+        <Literal>имеет_тему</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lecturePreparation</IRI>
+        <Literal>Подготовка_к_лекции</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#methods_of_representation_of_multidimensional_signals</IRI>
+        <Literal>Методы представления многомерных сигналов типа изображений как массива данных</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#modern_methods_of_digital_signal_processing</IRI>
+        <Literal>Современные методы цифровой обработки сигналов</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#practical_skills_in_digital_signal_processing_in_control_systems</IRI>
+        <Literal>Практическими навыками по цифровой обработке сигналов в системах управления</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#practical_skills_of_developing_an_algorithmic_and_software</IRI>
+        <Literal>Практическими навыками разработки эффективного алгоритмического и программного продукта анализа сигналов на примере изображений</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#selfWork_1</IRI>
+        <Literal>СРС1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#systems_of_parallel_data_processing</IRI>
+        <Literal>Классические и специализированные системы параллельной обработки данных в системах управления</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#1.1.ACS</IRI>
+        <Literal>Тема 1.1 Понятие АСУ ТП, обобщенная структура АСУ ТП, типы и классификация сигналов, используемых в системах управления различного назначения.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#1.2.Signal_exchange_between_subsystems</IRI>
+        <Literal>Тема 1.2 Обмен сигналами между подсистемами нижнего и верхнего уровня. Передача группы сигналов, определяющих состояние элементов контроля и управления. Имитаторы систем нижнего уровня.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

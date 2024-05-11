@@ -1,0 +1,84 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:edu="http://vst/science/ontologies/networkedu.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Indicator">
+    <rdfs:label xml:lang="ru">Индикатор</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Ability">
+    <rdfs:label xml:lang="ru">Умение</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Descriptor"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Knowledge">
+    <rdfs:label xml:lang="ru">Знание</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Descriptor"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Competence">
+    <rdfs:label xml:lang="ru">Компетенция</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Discipline">
+    <rdfs:label xml:lang="ru">Дисциплина</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Descriptor">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Knowledge"/>
+          <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Ability"/>
+          <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Skill"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:label xml:lang="ru">Дескриптор</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://vst/science/ontologies/networkedu.owl#Skill">
+    <rdfs:label xml:lang="ru">Навык</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://vst/science/ontologies/networkedu.owl#Descriptor"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://vst/science/ontologies/networkedu.owl#hasPrevDiscipline">
+    <rdfs:range rdf:resource="http://vst/science/ontologies/networkedu.owl#Discipline"/>
+    <rdfs:domain rdf:resource="http://vst/science/ontologies/networkedu.owl#Discipline"/>
+    <rdfs:label xml:lang="ru">имеет_предыдущую_дисциплину</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vst/science/ontologies/networkedu.owl#hasOutputCompetence">
+    <rdfs:range rdf:resource="http://vst/science/ontologies/networkedu.owl#Competence"/>
+    <rdfs:domain rdf:resource="http://vst/science/ontologies/networkedu.owl#Discipline"/>
+    <rdfs:label xml:lang="ru">имеет_выходную_компетенцию</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vst/science/ontologies/networkedu.owl#hasNextDiscipline">
+    <rdfs:range rdf:resource="http://vst/science/ontologies/networkedu.owl#Discipline"/>
+    <rdfs:domain rdf:resource="http://vst/science/ontologies/networkedu.owl#Discipline"/>
+    <rdfs:label xml:lang="ru">имеет_следующую_дисциплину</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vst/science/ontologies/networkedu.owl#hasIndicator">
+    <rdfs:range rdf:resource="http://vst/science/ontologies/networkedu.owl#Indicator"/>
+    <rdfs:domain rdf:resource="http://vst/science/ontologies/networkedu.owl#Competence"/>
+    <rdfs:label xml:lang="ru">имеет_индикатор</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vst/science/ontologies/networkedu.owl#hasInputCompetence">
+    <rdfs:range rdf:resource="http://vst/science/ontologies/networkedu.owl#Competence"/>
+    <rdfs:domain rdf:resource="http://vst/science/ontologies/networkedu.owl#Discipline"/>
+    <rdfs:label xml:lang="ru">имеет_входную_компетенцию</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://vst/science/ontologies/networkedu.owl#hasDescriptor">
+    <rdfs:range rdf:resource="http://vst/science/ontologies/networkedu.owl#Descriptor"/>
+    <rdfs:domain rdf:resource="http://vst/science/ontologies/networkedu.owl#Indicator"/>
+    <rdfs:label xml:lang="ru">имеет_дескриптор</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </owl:ObjectProperty>
+</rdf:RDF>
