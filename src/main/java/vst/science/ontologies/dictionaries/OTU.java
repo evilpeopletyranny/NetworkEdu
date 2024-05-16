@@ -1,9 +1,9 @@
 package vst.science.ontologies.dictionaries;
 
 public class OTU {
-    public static String Discipline = "OTU",
+    public final static String Discipline = "OTU",
             Competence = "CompetenceOTU",
-            Indicator= "IndicatorOTU",
+            Indicator = "IndicatorOTU",
             Knowledge1 = "KnowledgeOTU1",
             Knowledge2 = "KnowledgeOTU2",
             Knowledge3 = "KnowledgeOTU3",

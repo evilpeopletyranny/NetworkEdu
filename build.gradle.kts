@@ -20,9 +20,11 @@ dependencies {
     implementation("org.apache.jena:jena-core:${jenaVersion}")
     implementation("org.apache.jena:apache-jena-libs:${jenaVersion}")
 
-    implementation("com.github.owlcs:ontapi:3.5.0")
-    implementation("com.github.sszuev:concurrent-rdf-graph:Tag")
+    // OWL API
+    implementation("net.sourceforge.owlapi:owlapi-distribution:5.5.0")
 
+    // Hermit Reasoner
+    implementation("net.sourceforge.owlapi:org.semanticweb.hermit:1.4.5.519")
 
     val log4jVersion = "2.23.1"
     implementation("org.apache.logging.log4j:log4j-core:${log4jVersion}")
@@ -34,6 +36,21 @@ tasks.test {
     useJUnitPlatform()
 }
 
-tasks.compileJava {
+tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
+}
+
+tasks.withType<Javadoc> {
+    options.encoding = "UTF-8"
+}
+
+tasks.withType<ProcessResources> {
+    filteringCharset = "UTF-8"
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+
+    }
 }

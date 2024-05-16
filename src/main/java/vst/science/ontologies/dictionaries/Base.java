@@ -1,7 +1,7 @@
 package vst.science.ontologies.dictionaries;
 
 public class Base {
-    public static String Discipline = "Discipline",
+    public final static String Discipline = "Discipline",
             Competence = "Competence",
             Indicator = "Indicator",
             Descriptor = "Descriptor",
@@ -9,7 +9,7 @@ public class Base {
             Ability = "Ability",
             Skill = "Skill";
 
-    public static String hasInputCompetence = "hasInputCompetence",
+    public final static String hasInputCompetence = "hasInputCompetence",
             hasOutputCompetence = "hasOutputCompetence",
             hasDescriptor = "hasDescriptor",
             hasIndicator = "hasIndicator",

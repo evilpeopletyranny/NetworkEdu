@@ -19,27 +19,31 @@ public class OntologyBuilder implements IOWL2OntologyBuilder {
         model.setNsPrefix("edu", ns);
     }
 
-    private OntClass getClass(String classUri) {
+    public String getNs() {
+        return ns;
+    }
+
+    public OntClass getClass(String classUri) {
         return Objects.requireNonNull(model.getOntClass(ns + classUri));
     }
 
-    private ObjectProperty getObjectProperty(String objectPropertyUri) {
+    public ObjectProperty getObjectProperty(String objectPropertyUri) {
         return Objects.requireNonNull(model.getObjectProperty(ns + objectPropertyUri));
     }
 
-    private DatatypeProperty getDatatypeProperty(String datatypePropertyUri) {
+    public DatatypeProperty getDatatypeProperty(String datatypePropertyUri) {
         return Objects.requireNonNull(model.getDatatypeProperty(ns + datatypePropertyUri));
     }
 
-    private OntProperty getOntProperty(String propertyUri) {
+    public OntProperty getOntProperty(String propertyUri) {
         return Objects.requireNonNull(model.getOntProperty(ns + propertyUri));
     }
 
-    private Individual getIndividual(String individualUri) {
+    public Individual getIndividual(String individualUri) {
         return Objects.requireNonNull(model.getIndividual(ns + individualUri));
     }
 
-    private OntResource getResource(String resourceUri) {
+    public OntResource getResource(String resourceUri) {
         return Objects.requireNonNull(model.getOntResource(ns + resourceUri));
     }
 

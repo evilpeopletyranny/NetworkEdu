@@ -46,6 +46,9 @@
     <rdfs:subClassOf rdf:resource="http://vst/science/ontologies/networkedu.owl#Descriptor"/>
   </owl:Class>
   <owl:ObjectProperty rdf:about="http://vst/science/ontologies/networkedu.owl#hasPrevDiscipline">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://vst/science/ontologies/networkedu.owl#hasNextDiscipline"/>
+    </owl:inverseOf>
     <rdfs:range rdf:resource="http://vst/science/ontologies/networkedu.owl#Discipline"/>
     <rdfs:domain rdf:resource="http://vst/science/ontologies/networkedu.owl#Discipline"/>
     <rdfs:label xml:lang="ru">имеет_предыдущую_дисциплину</rdfs:label>

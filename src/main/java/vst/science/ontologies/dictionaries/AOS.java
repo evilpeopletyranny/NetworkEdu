@@ -1,7 +1,7 @@
 package vst.science.ontologies.dictionaries;
 
 public class AOS {
-    public static String Discipline = "AOS",
+    public final static String Discipline = "AOS",
             Competence = "CompetenceAOS",
             Indicator1 = "IndicatorAOS1",
             Indicator2 = "IndicatorAOS2",
